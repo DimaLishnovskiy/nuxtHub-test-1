@@ -3,6 +3,9 @@
 //   middleware: 'simpleRequest'
 // })
 
+// const db = hubDatabase()
+
+
 const simpleRequest = ref('')
 
 const doSimpleRequest = async () => {
@@ -12,6 +15,12 @@ const doSimpleRequest = async () => {
   console.log('simpleRequest:', request);
 
   simpleRequest.value = request.message
+
+
+  console.log('log from fe-1-test branch');
+  
+  // console.log('db:', db);
+  
 }
 </script>
 
