@@ -17,6 +17,7 @@ export default defineEventHandler(async (event) => {
   try {
     // Виконання запиту
     const statement = db.prepare(query)
+
     // row bellow make error
     // const result = await statement.all() // Використовуємо `.all()` для отримання всіх рядків
 
