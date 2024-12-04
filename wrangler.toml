@@ -1,4 +1,0 @@
-[[d1_databases]]
-binding = "DB" # available in your Worker on env.DB
-database_name = "nuxt-hub-test-1"
-database_id = "dc1863bb-e4c8-4df7-b17a-685ed2941d5e"

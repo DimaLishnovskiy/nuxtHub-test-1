@@ -5,14 +5,11 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "dev:prepare": "nuxt-module-build build --stub; nuxt-module-build prepare; nuxi prepare playground",
     "generate": "nuxt generate",
     "preview": "npx nuxthub preview",
     "deploy": "npx nuxthub deploy",
     "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "ts-check": "npx nuxi typecheck"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@nuxt/eslint": "^0.6.1",
