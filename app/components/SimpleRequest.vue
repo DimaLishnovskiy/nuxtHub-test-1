@@ -18,6 +18,8 @@ const doSimpleRequest = async () => {
 
 
   console.log('log from fe-1-test branch');
+
+    console.log('log from fe-1-test branch to show preview mode don`t push it to prod second time');
   
   // console.log('db:', db);
   
