@@ -31,4 +31,17 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  // vite: {
+  //   css: {
+  //     preprocessorOptions: {
+  //       scss: {
+  //         additionalData: '@use "~/assets/global.scss" as *;'
+  //       }
+  //     }
+  //   }
+  // },
+
+  css: ['~/assets/global.scss'],
+
 })
