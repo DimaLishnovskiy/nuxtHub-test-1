@@ -1,3 +1,23 @@
 {
-  "extends": "../.nuxt/tsconfig.server.json"
+  "extends": "../.nuxt/tsconfig.server.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "strict": true,
+    // "paths": {
+    //   "types/*": [
+    //     "./@types/*"
+    //   ]
+    // }
+  //   "module": "es2015",
+  //       "noImplicitAny": true,
+  //       "sourceMap": true,
+  //       "outDir": "../dst/",
+  //       "target": "ESNEXT",
+  //       "typeRoots": [
+  //           "../../typings",
+  //           "../../node_modules/@types"
+  //       ]
+    
+  },
+  "exclude": ["node_modules"]
 }
