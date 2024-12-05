@@ -46,4 +46,26 @@ export default defineNuxtConfig({
 
   css: ['~/assets/global.scss'],
 
+  typescript: {
+    // typeCheck: true,
+    // hoist: [
+    //   "nitropack/types",
+    //   "nitropack",
+    //   "defu",
+    //   "h3",
+    //   "consola",
+    //   "ofetch",
+    //   "@unhead/vue",
+    //   "@nuxt/devtools",
+    //   "vue",
+    //   "@vue/runtime-core",
+    //   "@vue/compiler-sfc",
+    //   "vue-router",
+    //   "vue-router/auto-routes",
+    //   "unplugin-vue-router/client",
+    //   "@nuxt/schema",
+    //   "nuxt"
+    // ]
+
+  }
 })
