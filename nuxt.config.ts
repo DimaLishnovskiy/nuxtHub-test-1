@@ -1,13 +1,22 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules
-  modules: [
-    '@nuxthub/core',
-    '@nuxt/eslint',
-  ],
+  modules: ['@nuxthub/core', '@nuxt/eslint'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
+
+  // vite: {
+  //   css: {
+  //     preprocessorOptions: {
+  //       scss: {
+  //         additionalData: '@use "~/assets/global.scss" as *;'
+  //       }
+  //     }
+  //   }
+  // },
+
+  css: ['~/assets/global.scss'],
 
   // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
   runtimeConfig: {
@@ -22,29 +31,8 @@ export default defineNuxtConfig({
 
   // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {
-    database: true
+    database: true,
   },
-
-  // https://eslint.nuxt.com
-  eslint: {
-    config: {
-      stylistic: {
-        quotes: 'single',
-      },
-    },
-  },
-
-  // vite: {
-  //   css: {
-  //     preprocessorOptions: {
-  //       scss: {
-  //         additionalData: '@use "~/assets/global.scss" as *;'
-  //       }
-  //     }
-  //   }
-  // },
-
-  css: ['~/assets/global.scss'],
 
   typescript: {
     // typeCheck: true,
@@ -66,6 +54,14 @@ export default defineNuxtConfig({
     //   "@nuxt/schema",
     //   "nuxt"
     // ]
+  },
 
-  }
+  // https://eslint.nuxt.com
+  eslint: {
+    config: {
+      stylistic: {
+        quotes: 'single',
+      },
+    },
+  },
 })
